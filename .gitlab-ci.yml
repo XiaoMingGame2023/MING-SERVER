@@ -6,6 +6,7 @@ stages:
 deploy_production:
   stage: deploy
   script:
-    - 
+    - makdir public
+    - cp ./ /public
   only:
     - main
